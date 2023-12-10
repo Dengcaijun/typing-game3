@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>打字游戏</title>
+    <script src="./js/index.js" async></script>
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+</head>
+<body>
+    <!-- 主体部分 -->
+    <audio id="mus" >
+        <source src="./music/music_bg.mp3"></source>
+    </audio>
+	<div id="box">
+        <img src="./img/music_close.png" id="volume">
+        <!-- 计分模块 -->
+        <div class="score">0</div>
+        <div id="game"></div>
+        
+        <!-- 按钮 -->
+        <div class="controll">
+            <input type="button" class="btn start" value="开 始 游 戏" />
+            <input type="button" class="btn stop" value="暂 停 游 戏" />
+            <input type="button" class="btn quick" value="增 加 难 度" />
+        </div>
+        <div class="shade"></div>
+        <div class="reload">
+            <input type="button" class="btn squick" value="重新开始"/>
+            <input type="button" class="btn tu" value="结束游戏"/>
+        </div>
+        
+    </div>
+</body>
+</html>

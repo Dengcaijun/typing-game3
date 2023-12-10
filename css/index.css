@@ -1,0 +1,124 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 背景 */
+#box{
+    width: 100%;
+    height: 100vh;
+    background:url(../img/background.jpg) no-repeat;
+    background-size:100% 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.score{
+    width: 250px;
+    height: 355px;
+    background: url(../img/score.png) no-repeat;
+    background-size:100% 100%;
+    position: absolute;
+    right:10px;
+    bottom: 10px;
+    font-size: 60px;
+    text-align: center;
+    line-height: 280px;
+    color: white;
+    cursor: pointer;
+    /* user-select: none; */
+    /* margin-top: 395px; */
+}
+.controll{
+    position: absolute;
+    left:60px;
+    bottom: 60px;
+    /* background: #fce2c1; */
+}
+input[type='button']{
+	border-radius:6px;
+	display:block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+input.start,input.squick{
+    box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+    border:1px solid #74b807;
+    text-shadow:0px 1px 0px #528009;
+}
+input.start:hover,input.squick:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+input.stop{
+    box-shadow:inset 0px 1px 0px 0px #97c4fe;
+	background:linear-gradient(to bottom, #3d94f6 5%, #1e62d0 100%);
+	background-color:#3d94f6;
+    border:1px solid #337fed;
+    text-shadow:0px 1px 0px #1570cd;
+}
+input.stop:hover {
+	background:linear-gradient(to bottom, #1e62d0 5%, #3d94f6 100%);
+	background-color:#1e62d0;
+}
+input.quick,input.tu{
+	box-shadow:inset 0px 1px 0px 0px #f29c93;
+	background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+	background-color:#fe1a00;
+	border:1px solid #d83526;
+	text-shadow:0px 1px 0px #b23e35;
+}
+input.quick:hover,input.tu:hover {
+	background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+	background-color:#ce0100;
+}
+.shade{
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background:rgba(0,0,0,0.6);
+    top: 0;
+    left: 0;
+}
+.reload{
+    display: none; 
+    width: 500px;
+    height: 350px;
+    background: url(../img/reload.gif) no-repeat;
+    background-size:350px 270px;
+    /* margin: 0 auto; */
+    position: absolute;
+    top: 50%;
+    left:50%;
+    margin-top: -175px;
+    margin-left: -250px;
+    text-align: center;
+    background-position: center top;
+    /* border: 1px solid #000; */
+}
+input.squick{
+    position: absolute;
+    bottom: 25px;
+    left: 100px;
+}
+input.tu{
+    position: absolute;
+    bottom: 25px;
+    right: 100px;
+}
+#game img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+}
+#volume{
+    float: right;
+    margin-right: 40px;
+}
